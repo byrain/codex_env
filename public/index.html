@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 最新新闻聚合</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1>AI 最新新闻</h1>
+        <p>聚合中美两个数据源，展示最新 10 条可点击新闻。</p>
+        <button id="refreshBtn">刷新</button>
+      </header>
+
+      <section>
+        <div id="meta" class="meta"></div>
+        <ul id="newsList" class="news-list"></ul>
+        <p id="status"></p>
+      </section>
+    </main>
+
+    <template id="newsItemTemplate">
+      <li class="news-card">
+        <span class="badge"></span>
+        <a class="news-link" target="_blank" rel="noopener noreferrer"></a>
+        <time class="published-time"></time>
+      </li>
+    </template>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
